@@ -1,0 +1,151 @@
+html { 
+    height: 100%;
+
+}
+body {
+    height: 100%;
+    margin: 0;
+
+}
+header {
+    background-image: url("img/hd-bacpont.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0px 0;    
+    
+}
+
+h1 {
+    font-size: 80px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Fredoka One', cursive;
+    border-style: dotted;
+    background-color: rgba(150, 150, 150, 0.7);
+    padding: 25px;
+    transition: background-color 1s ease-in-out;
+    text-align: center;
+    
+}
+
+h1:hover {
+    background-color: silver;
+}
+
+
+Section {
+    font-size: 35px;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(31, 33, 34);
+    background-color: rgb(199, 191, 191);
+    min-height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+
+article {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid rgb(37, 36, 36);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 50px;
+    width: 15%;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden
+    
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale(1);
+    transition: all 0.3s ease-in-out
+}
+
+h2 {
+    align-items: center; 
+    
+}
+
+p {
+    align-items: center;
+   
+}
+
+
+h1:hover {
+    background-color: rgba(50, 50, 50, 1)
+
+}
+
+article:hover .bg-img {
+    filter: grayscale(0);
+    transform: scale(1.5);
+}
+
+article h2 {
+    color: red;
+
+}
+#bigdata { background-image: url("img/bigdata.png"); }
+#nike {background-image: url("img/nike.jpg");    }
+#fastfood { background-image: url("img/fastfood.jpg");    }
+#samsung {background-image: url("img/samsung.jpeg");    }
+#daunat {background-image: url("img/daunat.jpg");    }
+#lyon {background-image: url("img/lyon.jpg");    }
+#amazon {background-image: url("img/amazon.png");    }
+#ethereum {background-image: url("img/ethereum.png");    }
+
+/* For Mobiles Only */
+@media only screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+            }
+            article {
+                width: 80%;
+            }  
+
+}
+
+/* For Tablets Only */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+     article {
+         width: 30%;
+
+     }
+}
+
+/* For Desktop Only */
+@media only screen and (min-width: 900px) {
+
+}
